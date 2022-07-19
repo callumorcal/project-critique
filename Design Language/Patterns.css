@@ -1,0 +1,141 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------PATTERNS (CSS)----------*/
+
+
+
+
+
+/*-----HORIZONTAL HEADER-----*/
+
+header, header div{
+	display: flex;
+	align-items: center;
+}
+
+header{
+	z-index: 90;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	min-width: 1016px;
+	height: 56px;
+	top: 0px;
+	padding: 12px 24px;
+}
+
+header a:not(:last-child){
+	margin-right: 24px;
+}
+
+header input{
+	width: 432px;
+}
+
+#notification_Icon::before, #adobe_Apps_Icon::before /* ⬅ Tooltip position */{
+	left: -38px;
+}
+
+#host_Icon::before /* ⬅ Tooltip position */{
+	left: -26px;
+}
+
+#profile_Link::before /* ⬅ Tooltip position */{
+left: -20px;
+}
+
+
+
+
+
+/*-----VERTICAL SIDEBAR-----*/
+
+nav > a, nav .p_Small, nav h5, nav > div{
+	padding: 12px 24px;
+}
+
+nav{
+	z-index: 80;
+	position: fixed;
+	width: 216px;
+	height: calc(100vh - 56px);
+	top: 56px;
+	padding: 12px 0px;
+	overflow-y: hidden;
+	overflow-x: hidden; /* ⬅ Prevents visible margin increase when scrollbar appears */
+}
+
+nav:hover{
+	overflow-y: scroll;
+}
+
+nav > a{
+	width: 100%;
+}
+
+nav > a:hover{
+	background-color: #FAFAFA;
+}
+
+nav .avatar{
+	margin-right: 24px;
+}
+
+nav .avatar_Text{
+	display: inline-flex;
+	align-items: center;
+}
+
+nav a:nth-of-type(5) .avatar /* ⬅ Crit Avatar, #1 */{
+	position: relative;
+	background-image: url("../Code/Assets/Crit Covers/crit_Cover_A.jpg");
+}
+
+nav a:nth-of-type(5) .avatar::after /* ⬅ Crit Avatar, #1, Status */{
+	position: absolute;
+	content: '';
+	top: -4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #00FF84;
+}
+
+nav a:nth-of-type(6) .avatar /* ⬅ Crit Avatar, #2 */{
+	background-image: url("../Code/Assets/Crit Covers/crit_Cover_B.jpg");
+}
+
+nav a:nth-of-type(7) .avatar/* ⬅ Crit Avatar, #3 */{
+	background-image: url("../Code/Assets/Crit Covers/crit_Cover_C.jpg");
+}
+
+nav .a_Small{
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+nav h5{
+	color: #595755;
+}
+
+nav hr{
+	margin: 12px 24px;
+}
+
+#menu_Trigger:hover{
+	cursor: pointer
+}
+
+.hide_Nav /* ⬅ Triggered within Menu.js*/{
+	margin-left: -216px;
+}

@@ -1,0 +1,499 @@
+<!--
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+-->
+
+
+
+
+
+<!-----CRITIQUE (HTML)----->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="Code/Assets/Brand Logos/favicon.png"/>
+		<title>critique :: Share & Recieve Creative Feedback</title>
+		<link rel="stylesheet" href="Design Language/Basic Elements.css">
+		<link rel="stylesheet" href="Design Language/Components.css">
+		<link rel="stylesheet" href="Design Language/Patterns.css">
+		<link rel="stylesheet" href="Code/CSS/Master.css">
+		<link rel="stylesheet" href="Code/CSS/critique.css">
+		<link rel="stylesheet" href="Code/CSS/critique (Guest User).css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="Code/JS/jquery-3.4.0.min.js"></script>
+		<script type="text/javascript" src="Code/JS/Master.js"></script>
+		<script type="text/javascript" src="Code/JS/critique (Guest User).js"></script>
+	</head>
+
+	<body>
+
+		<!-----HORIZONTAL HEADER (FIXED)----->
+		<header class="card">
+			<div>
+				<a id="menu_Trigger"><i class="material-icons" style="font-size: 24px">menu</i></a>
+				<a href="index.html" title="Critique Home"><img src="Code/Assets/Brand Logos/critique_Logo.svg" height="18px"></a>
+			</div>
+			<input class="alert" type="text" placeholder="Search, e.g. A2 poster design">
+			<div>
+				<a href="Code/Assets/product_Info.pdf#page=8" target="_blank" id="host_Icon" class="alert_Confirm a_Icon a_Tooltip" data-tooltip="Host crit" data-placement="bottom"><i class="material-icons" style="font-size: 24px">group_work</i></a>
+				<a id="adobe_Apps_Icon" class="alert a_Icon a_Tooltip" data-tooltip="Adobe apps" data-placement="bottom"><i class="material-icons" style="font-size: 24px">apps</i></a>
+				<a href="critique.html" class="sign_In_Up blue_Icon" id="sign_In">Sign in</a>
+				<a class="alert sign_In_Up">Sign up</a>
+				<a href="https://www.adobe.com" target="_blank" title="www.adobe.com"><img src="Code/Assets/Brand Logos/adobe_Logo.svg" height="18px"></a>
+			</div>
+		</header>
+
+		<!-----VERTICAL SIDEBAR (FIXED)----->
+		<nav class="card scrollbar">
+			<a title="Discover" class="alert a_Icon a_Active"><i class="material-icons" style="font-size: 24px">style</i>Discover</a>
+			<a href="Code/Assets/product_Info.pdf#page=3" target="_blank" title="Crits" class="alert_Confirm a_Icon"><i class="material-icons" style="font-size: 24px">forum</i>Crits</a>
+			<a href="Code/Assets/product_Info.pdf#page=17" target="_blank" title="Notes" class="alert_Confirm a_Icon"><i class="material-icons" style="font-size: 24px">format_align_left</i>Notes</a>
+			<a href="Code/Assets/product_Info.pdf#page=18" target="_blank" title="Teams" class="alert_Confirm a_Icon"><i class="material-icons" style="font-size: 24px">people</i>Teams</a>
+			<hr>
+			<a title="Blog" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">import_contacts</i>Blog</a>
+			<a title="Jobs" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">work</i>Jobs</a>
+			<hr>
+			<a title="Settings" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">settings</i>Settings</a>
+			<a title="Report History" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">flag</i>Report History</a>
+			<a title="Help" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">help_outline</i>Help</a>
+			<hr>
+			<a href="Code/Assets/product_Info.pdf" target="_blank" title="Coming Soon" class="alert_Confirm a_Icon"><i class="material-icons" style="font-size: 24px">new_releases</i>Coming Soon</a>
+			<a title="Send Feedback" class="alert a_Icon"><i class="material-icons" style="font-size: 24px">feedback</i>Send Feedback</a>
+			<hr>
+			<div>
+				<a title="About" class="alert a_Small">About</a>
+				<a title="Press" class="alert a_Small">Press</a>
+				<a title="Copyright" class="alert a_Small">Copyright</a>
+				<a title="Contact Us" class="alert a_Small">Contact Us</a>
+				<a title="Plagiarism" class="alert a_Small">Plagiarism</a>
+				<a title="Adobe" class="alert a_Small">Adobe</a>
+				<a title="Developers" class="alert a_Small">Developers</a>
+				<a title="Careers" class="alert a_Small">Careers</a>
+				<a title="Terms" class="alert a_Small">Terms</a>
+				<a title="Privacy" class="alert a_Small">Privacy</a>
+				<a title="Policy & Safety" class="alert a_Small">Policy & Safety</a>
+				<a title="Test New Features" class="alert a_Small">Test New Features</a>
+			</div>
+			<hr>
+			<p class="p_Small">© 2019 critique, LLC</p>
+		</nav>
+
+		<!-----GRID (OPEN)----->
+		<div class="grid">
+
+			<!-----HERO----->
+			<section class="card hero">
+				<div>
+					<h1>Join critiques to advance your <span id="hero_Animation">skillset</span></h1>
+					<p>Critique enables you to quickly recieve design feedback from the world's most supportive creative community.</p>
+					<div>
+						<button class="alert">Sign up with email</button>
+						<p class="p_Small">or</p>
+						<a class="alert a_Brand_Google"><img src="Code/Assets/Brand Logos/google_Logo.svg" style="width: 18px;"></a>
+						<a class="alert a_Brand_Facebook"><img src="Code/Assets/Brand Logos/facebook_Logo.svg" style="width: 10px;"></a>
+					</div>
+				</div>
+			</section>
+
+			<!-----SEARCH FILTERS----->
+			<section class="card search_Filters">
+				<div>
+					<h4 class="alert">All Creative Fields</h4>
+					<h4 class="alert">All Topics</h4>
+					<h4 class="alert">Join & Spectate</h4>
+					<h4 class="alert">Additional Filters</h4>
+				<div>
+				<div id="anchor"></div>
+			</section>
+
+			<!-----CRITS (OPEN)----->
+			<section class="crits">
+				<!-----CARD GRID (OPEN)----->
+				<div>
+					<!-- ⬇ Crit Card #1 -->
+					<div class="guest_Alert card card_Rounded lightbox_Visible_Trigger">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>The Emergency Service Show (Logo Concept)</h5>
+								<p class="p_Small">Branding, Logo</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>4 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #2 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>FORM — Sustainable furniture solutions</h5>
+								<p class="p_Small">Branding, Logo</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #3 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Bauer Keyboard | Pantone COTY (Concept)</h5>
+								<p class="p_Small">Industrial Design, Form</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #4 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>ONCE: Permanent life fixtures</h5>
+								<p class="p_Small">Branding, Concept</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #5 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Virtual Desktop</h5>
+								<p class="p_Small">AR/VR, Concept</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>4</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>7 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #6 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Poster Collection</h5>
+								<p class="p_Small">Graphic Design, Layout</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>8</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>11 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #7 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Diverso</h5>
+								<p class="p_Small">Interaction Design, Motion</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #8 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Tracer experiment</h5>
+								<p class="p_Small">Motion Graphics, Speed</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #9 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>KSENOBI</h5>
+								<p class="p_Small">Drawing, Colour</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #10 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Prism AR Headset Concept</h5>
+								<p class="p_Small">Industrial Design, General</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #11 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Smart home</h5>
+								<p class="p_Small">UI/UX, Colour</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #12 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>中秋主题三折页</h5>
+								<p class="p_Small">Graphic Design, Image</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #13 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>SL Therapy II (Concept) - Beauty Device</h5>
+								<p class="p_Small">Architecture, Drawing</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #14 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>2heads / Twoheads - design studio</h5>
+								<p class="p_Small">Branding, Logo</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #15 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Run Bike (University Project)</h5>
+								<p class="p_Small">Industrial Design, Concept</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #16 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Surf Planet UI Redesign</h5>
+								<p class="p_Small">UI/UX, Scanability</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #17 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Luna, Merch - Concept</h5>
+								<p class="p_Small">Web Design, Hierachy</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #18 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>About Her (Student project)</h5>
+								<p class="p_Small">Fashion Communication, Art Direction</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #19 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Beauty Retouch</h5>
+								<p class="p_Small">Retouching, Saturation</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #20 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Dess Website</h5>
+								<p class="p_Small">Web Design, Navigation</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #21 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Night & Day T-Shirt</h5>
+								<p class="p_Small">Graphic Design, General</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #22 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>Botanic Florals Print</h5>
+								<p class="p_Small">Pattern Design, General</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #23 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>New York - Pencil line sketch</h5>
+								<p class="p_Small">Architecture, Drawing</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- ⬇ Crit Card #24 -->
+					<div class="guest_Alert card card_Rounded">
+						<a class="crit_Card">
+							<div class="crit_Image"></div>
+							<div class="crit_Text">
+								<h5>A Year Long Journey</h5>
+								<p class="p_Small">Illustration, Texture</p>
+								<hr>
+								<div>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">people</i>5</a>
+									<a class="a_Icon a_Icon_Number"><i class="material-icons" style="font-size: 24px">access_time</i>5 mins</a>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-----CARD GRID (CLOSE)----->
+
+				<!-----LOAD CARDS----->
+				<section class="load_Cards">
+					<button class="alert button_Disabled">Load more crits</button>
+				</section>
+
+			</section>
+			<!-----CRITS (CLOSE)----->
+
+		</div>
+		<!-- ⬅ GRID (CLOSE) -->
+
+	</body>
+
+</html>

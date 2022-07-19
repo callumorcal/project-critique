@@ -1,0 +1,44 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------ASSET LIBRARY (CSS)----------*/
+
+
+
+
+
+/*-----GRID-----*/
+
+.grid{
+	display: block;
+}
+
+
+
+
+
+/*-----CARDS-----*/
+
+.card_Square{
+	width: 300px;
+	height: 175px;
+}
+
+.card_Semi-Rounded{
+	width: 300px;
+	height: 175px;
+}
+
+.card_Rounded{
+	width: 300px;
+	height: 175px;
+}

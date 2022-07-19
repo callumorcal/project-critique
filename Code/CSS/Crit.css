@@ -1,0 +1,317 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------CRIT.HTML (CSS)----------*/
+
+
+
+
+
+/*-----BODY-----*/
+
+body{
+	overflow: hidden;
+}
+
+
+
+
+
+/*-----GRID-----*/
+
+.grid{
+	height: calc(100vh - 112px);
+	padding: 80px;
+	background-image: url("../Assets/Crit Covers/crit_Cover_1.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: content-box; /* ⬅ Enables background image padding */
+	background-position: center;
+}
+
+
+
+
+
+/*-----VERTICAL SIDEBAR-----*/
+
+nav a:nth-of-type(5) .avatar /* ⬅ Crit Avatar, #1 */{
+	background-image: url("../Assets/Crit Covers/crit_Cover_1.svg");
+}
+
+nav a:nth-of-type(6) .avatar /* ⬅ Crit Avatar, #2 */{
+	position: relative;
+	background-image: url("../Assets/Crit Covers/crit_Cover_A.jpg");
+}
+
+nav a:nth-of-type(6) .avatar::after /* ⬅ Crit Avatar, #2, Status */{
+	position: absolute;
+	content: '';
+	top: -4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #00FF84;
+}
+
+nav a:nth-of-type(7) .avatar /* ⬅ Crit Avatar, #3 */{
+	background-image: url("../Assets/Crit Covers/crit_Cover_B.jpg");
+}
+
+nav a:nth-of-type(8) .avatar /* ⬅ Pending Crit Avatar, #4 */ {
+background-image: url("../Assets/Crit Covers/crit_Cover_C.jpg");
+}
+
+
+#critique_Logo::before /* ⬅ Tooltip position */{
+	left: -24px;
+}
+
+
+
+
+
+/*-----TOOLBAR-----*/
+
+.toolbar{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 0px;
+	right: 448px;
+	height: 56px;
+	padding: 24px;
+}
+
+.toolbar > #more_Tools_Icon{
+	margin-right: 20px;
+}
+
+#more_Tools_Icon::before /* ⬅ Tooltip position */{
+	left: -33px;
+}
+
+.toolbar .tooltip_Image{
+	margin-top: 4px;
+}
+
+.toolbar .material-icons:hover{
+	margin-top: -4px;
+	color: inherit;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+}
+
+.toolbar > #more_Tools_Icon .material-icons:hover:hover{
+	margin-top: 0px;
+}
+
+.toolbar > .tooltip_Image:not(:last-of-type){
+	margin-right: 24px;
+}
+
+
+
+
+
+/*-----TOOLTIP IMAGE-----*/
+
+.tooltip_Image{
+	position: relative;
+}
+
+.tooltip_Image > div{
+	z-index: 100;
+	position: absolute;
+	visibility: hidden;
+	width: 296px;
+	bottom: 0px;
+	left: -132px;
+	-webkit-transform: translateY(-32px);
+	opacity: 0;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+}
+
+.tooltip_Image:hover > div{
+	visibility: visible;
+	-webkit-transform: translateY(-36px);
+	opacity: 1;
+	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+}
+
+.tooltip_Image > div > div:first-of-type{
+	padding: 16px;
+	background: rgba(33,33,33,0.9);
+}
+
+.tooltip_Image > div > div:last-of-type{
+	padding: 16px;
+	background: rgba(33,33,33,0.8);
+}
+
+.tooltip_Image > div > div:last-of-type > *{
+	color: white;
+}
+
+
+
+
+
+/*-----CHAT-----*/
+
+.chat > div:nth-of-type(odd), .chat > div:nth-of-type(odd) > div{
+	display: flex;
+	align-items: center;
+}
+
+.chat{
+	position: absolute;
+	bottom: 0px;
+	right: 24px;
+	width: 400px;
+	height: 491px;
+}
+
+.chat > div{
+	height: 56px;
+	padding: 12px 24px;s
+}
+
+.chat > div:nth-of-type(odd) /* ⬅ Chat (Header & Input) */ {
+	justify-content: space-between;
+}
+
+.chat > div:nth-of-type(odd) a:not(:last-of-type){
+	margin-right: 24px;
+}
+
+.chat > div:nth-of-type(odd) .a_Icon_Number .material-icons{
+	margin-right: 6px;
+}
+
+.chat > div:nth-of-type(1) /* ⬅ Chat (Header) */ {
+	border-bottom: .5px solid #E3E3E2;
+}
+
+.chat > div:nth-of-type(1):hover{
+	background-color: #F5F5F5;
+	cursor: pointer;
+}
+
+.chat span{
+	color: inherit;
+	line-height: 22px;
+}
+
+#crit_Timer_Icon span::first-letter{
+	margin-right: 4px; /* ⬅ Margin right (4px, mimicks text spacing)*/
+}
+
+#messages_Icon::before /* ⬅ Tooltip position */{
+	left: -24px;
+}
+
+#participants_Icon::before /* ⬅ Tooltip position */{
+	left: -32px;
+}
+
+#crit_Timer_Icon::before /* ⬅ Tooltip position */{
+	left: -4px;
+}
+
+#crit_Info_Icon::before{
+	left: -36px;
+}
+
+.chat > div:nth-of-type(2) /* ⬅ Chat (Messages) */ {
+	width: 100%;
+	height: 324px;
+	padding: 24px;
+	padding-bottom: 0px;
+	background-color: #FAFAFA;
+	box-shadow: none; /* ⬅ Removes box shadow (By default it overlaps <input>)*/
+	overflow-y: scroll;
+}
+
+.chat div:nth-of-type(2) > div /* ⬅ Chat (Messages, Message) */{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 24px;
+}
+
+.sent_Message{
+	margin-top: 48px;
+}
+
+.sent_Message .p_Small{
+	position: absolute;
+	top: -25px;
+	left: 36px;
+	white-space: nowrap; /* ⬅ Forces single line text */
+}
+
+.sent_Message p{
+	margin-left: 12px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	background-color: #F1F1F0;
+}
+
+.crit_Notification p{
+	display: flex;
+	margin-left: 12px;
+	color: #595755;
+}
+
+.crit_Notification .material-icons{
+	margin-top: 2px; /* ⬅ Horizontal alignment adjustment */
+	margin-right: 12px;
+}
+
+.host_Action p{
+	color: #0076FF;
+}
+
+.new_Message > * /* ⬅ Animation triggered within Crit.js */{
+	display: none;
+}
+
+.chat input{
+	width: 100%;
+	height: 56px;
+	padding: 24px;
+	border: .5px solid #E3E3E2;
+	border-left: none;
+	border-right: none;
+}
+
+#emoji::before, #crit_Settings_Icon::before /* ⬅ Tooltip position */{
+	left: -40px;
+}
+
+#upload_Image_Icon::before /* ⬅ Tooltip position */{
+	left: -44px;
+}
+
+#insert_Link_Icon::before /* ⬅ Tooltip position */{
+	left: -32px;
+}
+
+#voice_Message_Icon::before /* ⬅ Tooltip position */{
+	left: -64px;
+}
+
+.close_Chat /* ⬅ Triggered within Crit.js */{
+	bottom: -435px;
+}

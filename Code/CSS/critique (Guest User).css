@@ -1,0 +1,64 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------CRITIQUE (GUEST USER).HTML (CSS)----------*/
+
+
+
+
+
+/*-----HORIZONTAL HEADER-----*/
+
+.sign_In_Up{
+	font-weight: 500;
+}
+
+
+
+
+
+/*-----HERO-----*/
+
+.hero{
+	padding: 80px;
+	background-image: url("../Assets/Crit Covers/hero.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.hero > div{
+	width: 400px;
+}
+
+.hero > div > *:not(:last-child){
+	margin-bottom: 40px;
+}
+
+.hero > div > div{
+	display: flex;
+	align-items: center;
+}
+
+.hero > div > div > *:not(:last-child){
+	margin-right: 8px;
+}
+
+
+
+
+
+/*-----CRITS-----*/
+
+.crits .card_Rounded:not(:first-of-type){
+	opacity: .25;
+}

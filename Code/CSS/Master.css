@@ -1,0 +1,59 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------MASTER (CSS)----------*/
+
+
+
+
+
+/*-----GLOBAL STYLES-----*/
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*-----RESPONSIVE BEHAVIOURS-----*/
+
+body{
+	min-width: 1020px;
+	overflow-x: hidden;
+	background-color: #FAFAFA;
+}
+
+/*-----GRID ANIMATION-----*/
+
+.grid{
+	-webkit-animation: fadeIn;
+	-webkit-animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/*-----CURSOR BEHAVIOURS-----*/
+
+.alert:hover{
+	cursor: not-allowed;
+}
+
+.alert_Confirm:hover{
+	cursor: help;
+}
+
+.lightbox_Visible_Trigger{
+	cursor: pointer;
+}

@@ -1,0 +1,297 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------CRITIQUE.HTML (CSS)----------*/
+
+
+
+
+
+/*-----GRID-----*/
+
+.grid > *{
+	grid-column: 1/11; /* ⬅ Place elements between columns 2 & 10 */
+}
+
+
+
+
+
+/*-----SEARCH FILTERS-----*/
+
+.search_Filters, .search_Filters > div:first-of-type, .search_Filters h4{
+	display: flex;
+	align-items: center;
+}
+
+.search_Filters{
+	justify-content: center;
+}
+
+.search_Filters > div:first-of-type{
+	height: 112px; /* ⬅ <header> height x2 */
+}
+
+.search_Filters h4::after /* ⬅ Dropdown Arrove */{
+	content: '';
+	width: 0px;
+	height: 0px;
+	margin-left: 12px;
+	border-bottom: 5px solid #212121;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	-webkit-transform: rotate(180deg);
+}
+
+.search_Filters > div:first-of-type > h4:not(:last-of-type){
+	margin-right: 48px;
+}
+
+
+
+
+
+/*-----CRITS-----*/
+
+.crits > div{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 192px);
+	grid-gap: 16px;
+	justify-content: center;
+	max-width: 1440px;
+	margin: auto auto;
+	padding: 48px;
+}
+
+.crits .card_Rounded{
+	overflow: hidden;
+	-webkit-transition: .2s ease-in-out;
+}
+
+.crits .card_Rounded:hover{
+	-webkit-transform: translateY(-10px);
+}
+
+.crits .card_Rounded:not(:first-of-type){
+	opacity: .25;
+}
+
+.crit_Image{
+	height: 144px;
+	background-color: #FAFAFA;
+	background-size: cover;
+	background-position: center;
+}
+
+.crits .card_Rounded:nth-of-type(1) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_1.svg");
+}
+
+.crits .card_Rounded:nth-of-type(2) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_2.svg");
+}
+
+.crits .card_Rounded:nth-of-type(3) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_3.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(4) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_4.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(5) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_5.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(6) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_6.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(7) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_7.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(8) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_8.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(9) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_9.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(10) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_10.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(11) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_11.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(12) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_12.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(13) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_13.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(14) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_14.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(15) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_15.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(16) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_16.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(17) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_17.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(18) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_18.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(19) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_19.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(20) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_20.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(21) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_21.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(22) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_22.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(23) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_23.jpg");
+}
+
+.crits .card_Rounded:nth-of-type(24) .crit_Image{
+	background-image: url("../Assets/Crit Covers/crit_Cover_24.jpg");
+}
+
+.crit_Text{
+	padding: 12px;
+}
+
+.crit_Card h5{
+	height: 40px;
+	margin-bottom: 24px;
+}
+
+.crit_Card hr{
+	margin: 12px 0px;
+}
+
+.crit_Text .a_Icon{
+	margin-right: 12px;
+}
+
+
+
+
+
+/*-----LOAD CARDS-----*/
+
+.load_Cards{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 48px;
+}
+
+
+
+
+
+/*-----LIGHTBOX-----*/
+
+.lightbox > div:nth-of-type(1) > div *:not(:last-child), .user, .a_Crit_Focus:first-of-type{
+	margin-right: 16px;
+}
+
+.lightbox > div:nth-of-type(1) > div, .lightbox > div:nth-of-type(3) > div{
+	display: flex;
+	align-items: center;
+}
+
+.lightbox > *{
+	display: flex;
+}
+
+.lightbox > div:nth-of-type(1){
+	justify-content: space-between;
+	padding: 24px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.lightbox > div:nth-of-type(2){
+	height: 408px;
+	padding: 48px;
+	background-image: url("../Assets/Crit Covers/crit_Cover_1.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: content-box; /* ⬅ Enables background image padding */
+	background-position: center;
+}
+
+.lightbox > div:nth-of-type(3){
+	display: inline-block;
+	padding: 24px 80px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.lightbox > div:nth-of-type(3) > *:not(:last-child){
+	margin-bottom: 24px;
+}
+
+.lightbox > div:nth-of-type(3) > div{
+	justify-content: space-between;
+	margin-top: 48px;
+}
+
+.lightbox > div:nth-of-type(3) > div a:nth-of-type(2){
+	opacity: .5;
+}
+
+.lightbox > div:nth-of-type(3) > div a:nth-of-type(3) .material-icons{
+	margin-left: 6px;
+}
+
+.a_Crit_Focus, .a_Crit_Focus:hover{
+	display: inline-block;
+	color: #0076FF;
+}
+
+
+
+
+
+/*-----CURSOR BEHAVIOURS-----*/
+
+.crit_Alert:hover{
+	cursor: not-allowed;
+}
+
+#join_Trigger:hover{
+	cursor: pointer;
+}

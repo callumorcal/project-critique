@@ -1,0 +1,219 @@
+/*
+Callum Brown
+Norwich University of the Arts
+Graphic Communication
+
+BA3b Assessment (FMP)
+*/
+
+
+
+
+
+/*----------COMPONENTS (CSS)----------*/
+
+
+
+
+
+/*-----CARDS-----*/
+
+.card{
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card_Semi-Rounded{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.card_Rounded{
+	border-radius: 4px;
+}
+
+
+
+
+
+/*-----AVATARS-----*/
+
+.avatar{
+	width: 24px;
+	height: 24px;
+	background-image: url("../Code/Assets/User Avatars/user_Male_CB.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+	-webkit-transition: .2s ease-in-out;
+}
+
+.avatar:hover, .avatar_Crit_Text:hover{
+	opacity: .5;
+}
+
+.avatar_Large{
+	width: 40px;
+	height: 40px;
+}
+
+.user_A /* ⬅ Female */{
+	background-image: url('../Code/Assets/User Avatars/user_Female_F.jpg');
+}
+
+.user_B /* ⬅ Female */{
+	background-image: url('../Code/Assets/User Avatars/user_Female_B.jpg');
+}
+
+.user_C /* ⬅ Female */{
+	background-image: url('../Code/Assets/User Avatars/user_Female_H.jpg');
+}
+
+.user_D /* ⬅ Male */{
+	background-image: url('../Code/Assets/User Avatars/user_Male_H.jpg');
+}
+
+.user_E /* ⬅ Male */{
+	background-image: url('../Code/Assets/User Avatars/user_Male_L.jpg');
+}
+
+
+
+
+
+/*-----BUTTONS-----*/
+
+button /* ⬅ Primary Button Style */{
+	padding: 8px 12px 8px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 4px;
+	background-color: #0076FF;
+}
+
+button:focus{
+	outline: none;
+}
+
+.button_Disabled{
+	color: #595755;
+	background-color: #F1F1F0;*/
+}
+
+.a_Brand_Google, .a_Brand_Facebook{
+
+display: inline-flex; /* ⬅ Centers brand logo */
+justify-content: center; /* ⬅ Centers brand logo */
+align-items: center; /* ⬅ Centers brand logo */
+width: 32px; /* ⬅ Link width */
+height: 32px; /* ⬅ Link height */
+border-radius: 100%; /* ⬅ Rounds link background (based on equal heigh & width) */
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); /* ⬅ Link shadow (rgba value, enables transparency)*/
+
+}
+
+.a_Brand_Google{
+	background-color: #FFFFFF;
+}
+
+.a_Brand_Facebook{
+	background-color: #3B5998;
+}
+
+
+
+
+
+/*-----TOOLTIP-----*/
+
+.a_Tooltip[data-tooltip]{
+	position: relative;
+}
+
+.a_Tooltip[data-tooltip]::before{
+	z-index: 100;
+	display: none;
+	position: absolute;
+	content: attr(data-tooltip);
+	padding: 8px 12px;
+	white-space: nowrap; /* ⬅ Forces single line text*/
+	font-size: 14px;
+	line-height: 22px;
+	color: #FFFFFF;
+	background: rgba(33,33,33,0.9);
+}
+
+.a_Tooltip[data-tooltip]:hover::before{
+	display: block;
+}
+
+.a_Tooltip[data-tooltip][data-placement="top"]::before{
+	bottom: 100%;
+	left: -21px;
+	margin-bottom: 8px;
+}
+
+.a_Tooltip[data-tooltip][data-placement="bottom"]::before{
+	top: 100%;
+	left: -21px;
+	margin-top: 8px;
+}
+
+.a_Tooltip[data-tooltip][data-placement="right"]::before{
+	margin-left: 52px;
+}
+
+.a_Tooltip .material-icons{
+	margin-right: 0px;
+}
+
+
+
+
+
+/*-----LIGHTBOX-----*/
+
+.lightbox_Wrapper{
+	z-index: 100;
+	position: fixed;
+	display: none;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	background-color: rgba(33, 33, 33, 0.9);
+	opacity: 0;
+}
+
+.lightbox_Wrapper > div{
+	width: 100%;
+	padding: 24px;
+	padding-bottom: 90px;
+	overflow-y: scroll;
+}
+
+.lightbox{
+	width: 816px;
+	margin: auto;
+	background-color: #FAFAFA;
+}
+
+.lightbox_Visibile{
+	display: flex;
+	opacity: 1;
+	-webkit-animation: lightbox_Fade;
+	-webkit-animation-duration: .3s;
+}
+
+@keyframes lightbox_Fade {
+	0%{opacity:0};
+	100%{opacity:1};
+}
+
+.scroll_Disabled{
+	overflow-y: hidden;
+}
